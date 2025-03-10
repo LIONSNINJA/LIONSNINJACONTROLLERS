@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lions Ninja Controllers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="logo">Lions Ninja Controllers</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Custom PS5 Controllers</h1>
+      <p>Back Buttons, Click Triggers, and More</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="products">
+    <h2>Choose Your Controller</h2>
+    <div class="product-grid">
+      <!-- Example Product Card -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Controller" />
+        <h3>Custom PS5 Controller</h3>
+        <p>Starting at $99</p>
+
+        <!-- Options (Color, Mods, etc.) -->
+        <div class="options">
+          <label for="color-1">Color:</label>
+          <select id="color-1">
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+          </select>
+
+          <label for="mods-1">Mods:</label>
+          <select id="mods-1">
+            <option value="No Mods">No Mods</option>
+            <option value="Back Buttons">Back Buttons</option>
+            <option value="Click Triggers">Click Triggers</option>
+            <option value="Both">Back Buttons + Click Triggers</option>
+          </select>
+        </div>
+
+        <!-- Add to Cart Button -->
+        <button 
+          class="add-to-cart-btn" 
+          data-product="Custom PS5 Controller" 
+          data-price="99" 
+          data-color-id="color-1" 
+          data-mods-id="mods-1"
+        >
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Duplicate or add more product cards as needed -->
+      <!-- ... -->
+    </div>
+  </section>
+
+  <!-- CART SECTION -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div id="cart-total"></div>
+    <button id="checkout-btn" class="btn">Checkout</button>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Questions or special requests? Send us a message!</p>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message"></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Lions Ninja Controllers. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
